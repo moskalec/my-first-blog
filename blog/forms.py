@@ -1,9 +1,10 @@
 from django import forms
 
-from .models import Post
+from .models import Article
 
-class PostForm(forms.ModelForm):
+
+class ArticleForm(forms.ModelForm):
 
     class Meta:
-        model = Post
-        fields = ('title', 'text',)
+        model = Article
+        fields = ('title', 'description', 'content', 'image', 'created', 'updated', 'publication_date', 'visible', 'category', 'author')

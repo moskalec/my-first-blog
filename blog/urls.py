@@ -3,10 +3,11 @@ from . import views
 
 
 urlpatterns = [
-    path('', views.post_list, name='post_list'),
-    path('post/(?<pk>\d+)/', views.post_detail, name='post_detail',),
-    path('post/new/', views.post_new, name='post_new'),
-    path('post/(?P<pk>\d+)/edit/', views.post_edit, name='post_edit'),
+    path('', views.article_list, name='article_lists'),
+    path('articles/', views.article_list, name='article_list'),
+    path('article/new/', views.article_new, name='article_new'),
+    # path('article/(?<pk>\d+)/', views.article_detail, name='article_detail',),
+    # path('article/(?P<pk>\d+)/edit/', views.article_edit, name='article_edit'),
 ]
 
 #Urls
@@ -23,6 +24,6 @@ urlpatterns = [
 #    2. Transliterated urls
 #        e.g.:
 #            category.title = 'спорт'
-#            articler.title = 'Финал Лиги Чемпионов все'
+#            article.title = 'Финал Лиги Чемпионов все'
 #
 #            url => /categories/sport/articles/final-ligi-chempionov-vse/
