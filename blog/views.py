@@ -43,5 +43,5 @@ def article_edit(request, pk):
             return redirect('article_detail', pk=post.pk)
     else:
         form = ArticleForm(instance=post)
-    return render(request, 'blog/article_edit.html', {'form': form})
+    return render(request, 'article_edit.html', {'form': form})
 
