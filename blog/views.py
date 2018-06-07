@@ -28,7 +28,7 @@ def article_new(request):
             return redirect('article_detail', pk=article.pk)
     else:
         form = ArticleForm()
-    return render(request, 'blog/article_edit.html', {'form': form})
+    return render(request, 'article_edit.html', {'form': form})
 
 
 def article_edit(request, pk):
