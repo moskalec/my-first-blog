@@ -6,7 +6,7 @@ urlpatterns = [
     path('', views.article_list, name='article_lists'),
     path('articles/', views.article_list, name='article_list'),
     path('article/new/', views.article_new, name='article_new'),
-    # path('article/(?<pk>\d+)/', views.article_detail, name='article_detail',),
+    path('article/(?<pk>\d+)/', views.article_detail, name='article_detail',),
     # path('article/(?P<pk>\d+)/edit/', views.article_edit, name='article_edit'),
 ]
 
